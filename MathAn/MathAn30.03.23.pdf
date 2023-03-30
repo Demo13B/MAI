@@ -1,0 +1,154 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage{geometry}
+\geometry{textheight=750pt, textwidth=500pt}
+\usepackage{cmap}                   
+\usepackage[T2A]{fontenc}           
+\usepackage[utf8]{inputenc}        
+\usepackage[english,russian]{babel} 
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{setspace}
+\doublespacing
+
+\title{Математический анализ, лекция}
+\author{Салихов Тимур, группа М8О-112Б-22, telegram: @dr\textunderscore lightspeed}
+\date{30.03.2023}
+
+\begin{document}
+\maketitle
+\newpage
+\section*{
+\begin{center}
+    \underline{Признак сравнения}
+\end{center}}
+\textbf{\textit{\underline{Теорема}}} (предельная форма признака сравнения):
+\newline
+Пусть \(f, g [a, b) \rightarrow \mathbb{R} ,\ f(x) \geqslant 0,\  g(x) > 0\) и существует(возможно \(\infty\)) \(\lim_{x \to b}\frac{f(x)}{g(x)}=K\)
+\newline
+Тогда:
+\newline
+1)При \(0 \leqslant k < +\infty\) из сходимости \(\int_{a}^{b}g(x)dx\) следует сходимость \(\int_{a}^{b}f(x)dx\)
+\newline
+2)При \(0 < k \leqslant +\infty\) из расходимости \(\int_{a}^{b}g(x)dx\) следует расхождение \(\int_{a}^{b}f(x)dx\)
+\newline
+Если \(f \sim g,\ x \to b\), то интегралы сходятся или расходятся одновременно
+\newline
+\textbf{\textit{\underline{Доказательство}}}:
+\newline
+1)\(0 \leqslant k < +\infty\ \Rightarrow\) для \(\epsilon=1\ \exists\delta_k > 0\):
+\[
+\forall x,\ x \in [a, b) \cap (b-\delta_\epsilon, b) \Rightarrow \Big| \frac{f(x)}{g(x)} - k\Big| < 1 \Rightarrow f(x) < (k + 1)g(x)\ (k+1 - const) \Rightarrow 
+\]
+\[
+f = O(g),\ x \to b \Rightarrow \text{По признаку сравнения, если }\int_{a}^{b}g(x)dx \text{сходится, то } \int_{a}^{b}f(x)dx\text{ сходится}
+\]
+2)Пусть \(0 < k \leqslant +\infty \)
+\par
+a) \(k < +\infty \Rightarrow \) для \(\epsilon=\frac{k}{2}\ \exists\delta_\epsilon > 0:\)
+\[
+\forall x \in [a, b)\cap (b - \delta_\epsilon , b)\Rightarrow \Big| \frac{f(x)}{g(x)} - k\Big| < \frac{k}{2} \Rightarrow \frac{k}{2} < \frac{f(x)}{g(x)} < \frac{3k}{2} \Rightarrow g(x) < \frac{2}{k}f(x) \Rightarrow 
+\]
+\[
+\Rightarrow g = O(f),\ x \to b \Rightarrow \text{ если } \int_{a}^{b}g(x)dx \text{ расходится } \Rightarrow \int_{a}^{b}f(x)dx \text{ расходится }
+\]
+\par
+(То есть, если \(\int_{a}^{b}f(x)dx\) сходится, то по признаку сравнения \(\int_{a}^{b}g(x)dx\) сходится)
+\par
+б)\(k=+\infty,\ \epsilon = 1\) Д/з ( :-( )\quad\quad\quad \(\blacksquare\)
+\newpage
+\section*{
+\begin{center}
+    \underline{Абсолютная и условная сходимость}
+\end{center}
+}
+Пусть \(f:[a, b) \to \mathbb{R},\ f \in R[a, \eta],\ \forall \eta \in [a, b),\ \displaystyle\lim_{x \to b-}f(x)=\infty\), если \(b < +\infty\)
+\newline
+\textbf{\textit{\underline{Определение:}}} \(\displaystyle\int_{a}^{b}f(x)dx\) называется абсолютно сходящимся, если сходится \(\displaystyle\int_{a}^{b}|f(x)|dx\) и условно сходящимся, если \(\displaystyle\int_{a}^{b}|f(x)|dx\) расходится, а \(\displaystyle\int_{a}^{b}f(x)dx\) сходится.
+\newline
+\textbf{\textit{\underline{Теорема}}}: Если \(\displaystyle\int_{a}^{b}|f(x)|dx\) сходится, то \(\displaystyle\int_{a}^{b}f(x)dx\) сходится
+\newline
+\textbf{\textit{\underline{Доказательство}}}:
+\[
+F(\eta) = \int_{a}^{\eta}f(x)dx \text{ сходится } \iff \exists \lim_{\eta \to b} F(\eta) \iff \text{по критерию Коши} \iff 
+\]
+\[
+\iff \forall \varepsilon > 0\quad \exists \eta_\varepsilon \in [a, b): \forall \eta',\  \eta'' \in (\eta_\varepsilon, b) \Rightarrow |F(\eta')-F(\eta'')| < \varepsilon \iff 
+\]
+\[
+\iff \Big|\int_{\eta'}^{\eta''}f(x)dx\Big| < \varepsilon \quad \Big(F(\eta') - F(\eta'')=\int_{a}^{\eta'}f(x)dx-\int_{a}^{\eta''}f(x)dx=\int_{a}^{\eta'}f(x)dx+\int_{\eta''}^{a}f(x)dx=
+\]
+\[
+=\int_{\eta''}^{\eta'}f(x)dx=-\int_{\eta'}^{\eta''}f(x)dx\Big)
+\]
+\(\to\) Пусть \(\displaystyle\int_{a}^{b}|f(x)|dx\) сходится \(\iff\ \forall \varepsilon > 0 \exists \eta_\varepsilon \in [a, b):\forall \eta',\ \eta'' \in (\eta_\varepsilon, b)\ \Big|\displaystyle\int_{\eta'}^{\eta''}|f(x)|dx \Big| < \varepsilon \Rightarrow\)
+\[
+\Big|\int_{\eta'}^{\eta''}f(x)dx\Big| \leqslant \Big|\int_{\eta'}^{\eta''}|f(x)|dx\Big| < \varepsilon \Rightarrow \int_{a}^{b}f(x)dx \text{ сходится\quad\quad\quad} \blacksquare  
+\]
+\textbf{\textit{\underline{Теорема}}} (признак Дирихле):
+\newline
+Пусть дан несобственный интеграл \(\displaystyle\int_{a}^{b}f(x)g(x)dx\) и 
+\newline
+1)\(f(x)\) - непрерывна и имеет ограниченную на \([a, b)\) первообразную \(F(x)\)
+\newline
+2)\(g(x)\) - непрерывна дифференцируема, монотонна и \(\displaystyle\lim_{x \to b}g(x)=0\)
+\newline
+Тогда \(\displaystyle\int_{a}^{b}f(x)g(x)dx\) сходится
+\newline
+\textbf{\textit{\underline{Доказательство}}}: 
+\newline
+Пусть \(\eta \in [a, b)\). По формуле интегрирования по частям
+\[
+\int_{a}^{\eta}f(x)g(x)dx=F(x)g(x)\Big|_{a}^{\eta} - \int_{a}^{\eta}F(x)g'(x)dx
+\]
+\[
+\lim_{\eta \to b}F(\eta)g(\eta)=0
+\]
+\[
+\text{Так как } F(x) \text{ ограничено } \Rightarrow \exists M > 0: |F(x)| \leqslant M,\  \forall x \in [a, b)
+\]
+\[
+g(x) \text{ - монотонна} \Rightarrow g'(x) \leqslant 0 \text{ или } g'(x) \geqslant 0 \text{ на } [a, b) \to \int_{a}^{\eta}|F(x)g'(x)|dx=\int_{a}^{\eta}|F(x)||g'(x)|dx \leqslant
+\]
+\[
+\leqslant \int_{a}^{\eta}M|g'(x)|dx=M\int_{a}^{\eta}g'(x)dx\text{ (Пусть } g'(x) \geqslant 0) \Rightarrow M(g(\eta)-g(a)) \leqslant\ M(-g(a)) \Rightarrow 
+\]
+\[
+\Rightarrow \int_{a}^{\eta}|F(x)g'(x)|dx \text{ ограничено} \Rightarrow \int_{a}^{b}|F(x)g'(x)|dx \text{ сходится} \Rightarrow \int_{a}^{b}F(x)g'(x)dx \text{ сходится} \Rightarrow
+\]
+\[
+\Rightarrow \exists \lim_{\eta \to b}\int_{a}^{\eta}F(x)g'(x)dx \Rightarrow \exists \lim_{\eta \to b}\int_{a}^{\eta}f(x)g(x)dx \text{\quad\quad\quad} \blacksquare
+\]
+\newline
+\textbf{\textit{\underline{Теорема}}} (признак Абеля):
+\newline
+Пусть дан интеграл \(\displaystyle\int_{a}^{b}f(x)g(x)dx\) и:
+\newline
+1)\(f(x)\) непрерывно на \([a, b)\) и \(\displaystyle\int_{a}^{b}f(x)dx\) сходится
+\newline
+2)\(g(x)\) непрерывно дифференцируема на \([a, b)\), монотонна и ограничена
+\newline
+Тогда \(\displaystyle\int_{a}^{b}f(x)g(x)dx\) сходится
+\newline
+\textbf{\textit{\underline{Доказательство}}}:
+\newline
+Рассмотрим \(\displaystyle\int_{a}^{\eta}f(x)g(x)dx\). Так как \(f)\) непрерывно \(\Rightarrow F(x)=\displaystyle\int_{a}^{x}f(t)dt\) - первообразная \(f(x)\) и \(\exists \displaystyle\lim_{x \to b}F(x)\) так как \(\displaystyle\int_{a}^{b}f(x)dx)\) сходится
+\newline
+Следовательно, \(F(x)\) ограничено на \([a, b)\), то есть \(\exists M > 0:\ |F(x)| \leqslant M,\ \forall x \in [a, b)\)
+\[
+\int_{a}^{\eta}f(x)g(x)dx = g(x)F(x)\Big|_{a}^{\eta} - \int_{a}^{\eta}F(x)g'(x)dx
+\]
+\[
+\lim_{\eta \to b}g(\eta)F(\eta) \text{ существует т.к. } \exists\lim_{\eta \to b}F(\eta) \text{ и } \exists\lim_{\eta \to b}g(\eta) \text{ т.к. } g(x) \text{ - монотонна и ограничена на } [a, b)
+\]
+\[
+\int_{a}^{\eta}|F(x)g'(x)|dx \leqslant M\int_{a}^{\eta}|g'(x)|dx. \text{ Пусть } g'(x) \geqslant 0,\ g \text{ ограничено на } [a, b) \Rightarrow \exists C > 0: |g(x)| \leqslant C
+\]
+\[
+\Rightarrow M(g(\eta)-g(a)) \leqslant M*2C
+\]
+\[
+\int_{a}^{b}|F(x)g'(x)|dx \text{ сходится} \Rightarrow \int_{a}^{b}F(x)g'(x)dx \text{ сходится} \Rightarrow \exists\lim_{\eta \to b}\int_{a}^{\eta}F(x)g'(x)dx \text{\quad\quad\quad} \blacksquare
+\]
+\end{document}
+
