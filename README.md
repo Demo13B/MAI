@@ -11,9 +11,9 @@
 [Учебник в котятках](https://drive.google.com/file/d/1_hDGPZptI3gUsukBP31Pc1iZGdke9d53/view)
 
 ## Дискретная математика
-Нефедыч на лекциях читает свою методичку, так что по всем вопросам в ЛМС
+Нефедыч на лекциях читает свою методичку, так что по всем вопросам в ЛМС\
 [Нефедыч в лмс](https://lms.mai.ru/course/view.php?id=5560)
 
 ## Зайцев
-Читайте [методичку](https://drive.google.com/file/d/13VM9Ixqfgd2Wqwu3Kht1LUMZb5E0sno8/view)
+Читайте [методичку в котятках](https://drive.google.com/file/d/13VM9Ixqfgd2Wqwu3Kht1LUMZb5E0sno8/view)
 
