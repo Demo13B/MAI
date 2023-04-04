@@ -12,7 +12,8 @@
 
 ## Дискретная математика
 Нефедыч на лекциях читает свою методичку, так что по всем вопросам в ЛМС\
-[Нефедыч в лмс](https://lms.mai.ru/course/view.php?id=5560)
+[Нефедыч в лмс](https://lms.mai.ru/course/view.php?id=5560)\
+[Пособие по курсовой](https://github.com/Demo13B/MAI/blob/main/Posobie_po_kursovoy.pdf)
 
 ## Зайцев
 Читайте [методичку в котятках](https://drive.google.com/file/d/13VM9Ixqfgd2Wqwu3Kht1LUMZb5E0sno8/view)
