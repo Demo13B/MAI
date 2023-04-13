@@ -3,7 +3,8 @@
 
 [Лекция от 23.03.23](https://github.com/Demo13B/MAI/blob/main/MathAn/MathAn23.03.23.pdf)\
 [Лекция от 30.03.23](https://github.com/Demo13B/MAI/blob/main/MathAn/MathAn30.03.23.pdf)\
-[Лекция от 06.04.23](https://github.com/Demo13B/MAI/blob/main/MathAn/MathAn06.04.23.pdf)
+[Лекция от 06.04.23](https://github.com/Demo13B/MAI/blob/main/MathAn/MathAn06.04.23.pdf)\
+[Лекция от 13.04.23](https://github.com/Demo13B/MAI/blob/main/MathAn/MathAn13.04.23.pdf)
 
 ## Линейная алгебра
 
