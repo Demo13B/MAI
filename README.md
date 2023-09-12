@@ -21,3 +21,8 @@
 ## Зайцев
 Читайте [методичку в котятках](https://drive.google.com/file/d/13VM9Ixqfgd2Wqwu3Kht1LUMZb5E0sno8/view)
 
+# МАИ 2 курс
+## Математический анализ
+
+[Лекция от 12.09.23](https://github.com/Demo13B/MAI/blob/main/MathAn/MathAn12.09.23.pdf)
+
