@@ -24,6 +24,7 @@
 # МАИ 2 курс
 ## Математический анализ
 
-[Лекция от 12.09.23](https://github.com/Demo13B/MAI/blob/main/MathAn/MathAn12.09.23.pdf)
-[Лекция от 19.09.23](https://github.com/Demo13B/MAI/blob/main/MathAn/MathAn19.09.23.pdf)
+[Лекция от 12.09.23](https://github.com/Demo13B/MAI/blob/main/MathAn/MathAn12.09.23.pdf)\
+[Лекция от 19.09.23](https://github.com/Demo13B/MAI/blob/main/MathAn/MathAn19.09.23.pdf)\
+[Лекция от 26.09.23](https://github.com/Demo13B/MAI/blob/main/MathAn/MathAn26.09.23.pdf)
 
